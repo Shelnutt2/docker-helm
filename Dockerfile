@@ -1,7 +1,7 @@
 FROM alpine:3.6 as build
 MAINTAINER Mario Siegenthaler <mario.siegenthaler@linkyard.ch>
 
-RUN apk add --update --no-cache ca-certificates git
+RUN apk add --update --no-cache ca-certificates git ruby
 
 ARG VERSION v2.7.2
 ARG FILENAME helm-${VERSION}-linux-amd64.tar.gz
